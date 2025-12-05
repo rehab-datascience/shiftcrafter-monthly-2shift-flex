@@ -1,6 +1,6 @@
 name: "🧠 Custom consult / カスタム相談"
 description: "Use this to request tailored help (specs, workflow, datasets, KPI, etc.) / 要件整理・設計・解析の個別相談"
-title: "[Consult] <short title here>"
+title: "[Consult] short title here"
 labels: ["consult", "question"]
 assignees: []
 body:
@@ -14,14 +14,14 @@ body:
     attributes:
       label: "Scope / 対象領域"
       options:
-        - Part 1 — Weekly 2-shift
-        - Part 2 — Monthly 2-shift
-        - Part 3 — Monthly 3-shift
-        - Part 4 — Monthly 2-shift + Short
-        - Roadmap / 文献ロードマップ
-        - EMG/IMU pipeline / 解析パイプライン
-        - KPI dashboard / KPIダッシュボード
-        - Other (describe below) / その他（下記）
+        - "Part 1 — Weekly 2-shift"
+        - "Part 2 — Monthly 2-shift"
+        - "Part 3 — Monthly 3-shift"
+        - "Part 4 — Monthly 2-shift + Short"
+        - "Roadmap / 文献ロードマップ"
+        - "EMG/IMU pipeline / 解析パイプライン"
+        - "KPI dashboard / KPIダッシュボード"
+        - "Other (describe below) / その他（下記）"
     validations:
       required: true
 
@@ -47,7 +47,10 @@ body:
     attributes:
       label: "Constraints / 制約"
       description: "Shifts, caps, holidays, fairness, platform limits, etc. / 夜勤上限・休日・公平性・環境制約など"
-      placeholder: "- Weekly night cap=2\n- No day-after-night\n- Short shift 09:00–16:00"
+      placeholder: |
+        - Weekly night cap=2
+        - No day-after-night
+        - Short shift 09:00–16:00
     validations:
       required: true
 
@@ -65,7 +68,10 @@ body:
     attributes:
       label: "Desired deliverables / 望む成果物"
       description: "HTML/JS, README, validation CSV spec, KPI report, notebook, etc."
-      placeholder: "- HTML tool + README (JA/EN)\n- validation_summary columns\n- ICS distribution adapter"
+      placeholder: |
+        - HTML tool + README (JA/EN)
+        - validation_summary columns
+        - ICS distribution adapter
     validations:
       required: true
 
@@ -74,9 +80,9 @@ body:
     attributes:
       label: "Language / 対応言語"
       options:
-        - JA only
-        - EN only
-        - JA + EN (bilingual)
+        - "JA only"
+        - "EN only"
+        - "JA + EN (bilingual)"
     validations:
       required: true
 
@@ -85,9 +91,9 @@ body:
     attributes:
       label: "Data sensitivity / データ機微度"
       options:
-        - No real data (dummy only) / 実データなし
-        - De-identified internal / 匿名化済み
-        - Contains personal/sensitive info / 個人情報を含む
+        - "No real data (dummy only) / 実データなし"
+        - "De-identified internal / 匿名化済み"
+        - "Contains personal/sensitive info / 個人情報を含む"
     validations:
       required: true
 
@@ -106,7 +112,7 @@ body:
     attributes:
       label: "Success criteria / 成功指標"
       description: "What proves it works? / 何が達成基準？"
-      placeholder: "≥98% slot fulfillment, 0 day-after-night violations, reviewers can reproduce..."
+      placeholder: ">=98% slot fulfillment, 0 day-after-night violations, reviewers can reproduce..."
     validations:
       required: true
 
@@ -115,10 +121,10 @@ body:
     attributes:
       label: "Priority / 優先度"
       options:
-        - P1 (urgent) / 緊急
-        - P2 (high) / 高
-        - P3 (normal) / 中
-        - P4 (low) / 低
+        - "P1 (urgent) / 緊急"
+        - "P2 (high) / 高"
+        - "P3 (normal) / 中"
+        - "P4 (low) / 低"
     validations:
       required: true
 
@@ -135,11 +141,11 @@ body:
     attributes:
       label: "Budget ballpark / 概算予算感"
       options:
-        - Pro bono / 0
-        - ~ ¥50k
-        - ~ ¥150k
-        - ~ ¥300k
-        - > ¥300k
+        - "Pro bono / 0"
+        - "~ ¥50k"
+        - "~ ¥150k"
+        - "~ ¥300k"
+        - "> ¥300k"
     validations:
       required: false
 
@@ -148,7 +154,9 @@ body:
     attributes:
       label: "Minimal sample (dummy) / 最小サンプル（架空データ）"
       description: "Staff list & day-off requests, or small CSV schema / 職員と休み希望、またはCSVスキーマ"
-      placeholder: "2025-11-03 Alice\n2025-11-08 Bob"
+      placeholder: |
+        2025-11-03 Alice
+        2025-11-08 Bob
     validations:
       required: false
 
